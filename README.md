@@ -30,7 +30,7 @@ SKPaymentQueue.default().rx.restoreCompletedTransactions()
         print(queue)
     }, onError: { error in
         // restoreCompletedTransactionsFailedWithError
-        print(queue)
+        print(error)
     }).disposed(by: disposeBag)
 ```
 
